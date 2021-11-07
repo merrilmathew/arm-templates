@@ -241,6 +241,10 @@
         "aksId": {
             "type": "string",
             "value": "[resourceId('Microsoft.ContainerService/managedClusters', parameters('clusterName'))]"
+        },
+        "aksFqdn": {
+            "type": "string",
+            "value": "[resourceId('Microsoft.ContainerService/managedClusters', parameters('clusterName')).fqdn]"
         }
     }
   }
